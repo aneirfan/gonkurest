@@ -8,7 +8,7 @@ class DataRestaurantSource {
     return responseJson.restaurants;
   }
 
-  static async PostRestaurant(data) {
+  static async postRestaurant(data) {
     const response = await fetch(API_ENDPOINT.POST_REVIEW, {
       method: 'POST',
       headers: {

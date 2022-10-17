@@ -17,7 +17,8 @@ const Favorite = {
     const data = await FavRestorandb.getAllResto();
     const listContainer = document.querySelector('#restaurant');
 
-    if (data.length === 0) {
+    // if (data.length === 0)
+    if (!data.length) {
       listContainer.innerHTML = `
         <h3 class="teks-tengah">Kamu belum memiliki daftar restaurant favorit</h3>`;
     } else {
